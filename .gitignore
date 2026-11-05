@@ -1,0 +1,6 @@
+data/
+scala/target/
+scala/project/
+__pycache__/
+.pytest_cache/
+.venv/

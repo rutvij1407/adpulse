@@ -1,0 +1,6 @@
+pyspark==3.5.3
+kafka-python==2.0.2
+pandas
+pyarrow
+streamlit
+pytest
