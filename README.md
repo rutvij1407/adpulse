@@ -1,5 +1,7 @@
 # AdPulse: real time ad click analytics
 
+[![CI](https://github.com/rutvij1407/adpulse/actions/workflows/ci.yml/badge.svg)](https://github.com/rutvij1407/adpulse/actions/workflows/ci.yml)
+
 AdPulse watches a live stream of ad events and shows, minute by minute, how well each ad campaign is doing: how many people saw it, how many clicked, the click through rate (CTR), and how much money was spent.
 
 It uses **Kafka** for the live stream, **PySpark Structured Streaming** to process it, **Parquet** for storage, a **Scala Spark** job for the daily report, and **Streamlit** for the dashboard.
@@ -76,6 +78,8 @@ It prints and saves a table with each campaign's totals, CTR, cost per click, it
 ```bash
 pytest tests
 ```
+
+Six unit tests cover parsing, the data quality rule, cost filling, per campaign counting, CTR and spend. GitHub Actions runs them, plus ruff and a compile of the Scala job, on every push.
 
 ## Results from a test run
 

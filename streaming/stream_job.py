@@ -17,7 +17,6 @@ import os
 import sys
 
 from pyspark.sql import SparkSession
-from pyspark.sql import functions as F
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from transforms import campaign_metrics, clean, is_valid, parse_events  # noqa: E402
